@@ -24,8 +24,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-plugin 'vim-scripts/AutoComplPop'
-plugin 'ervandew/supertab'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'ervandew/supertab'
 call vundle#end()
 
 

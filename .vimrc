@@ -96,6 +96,7 @@ nmap <silent> <leader>k <C-w>k
 " ===============
 autocmd VimEnter * NERDTree          
 autocmd VimEnter * wincmd p          "Put the cursor at the edit window
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags

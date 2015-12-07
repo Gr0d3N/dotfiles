@@ -24,6 +24,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+plugin 'vim-scripts/AutoComplPop'
+plugin 'ervandew/supertab'
 call vundle#end()
 
 
@@ -76,6 +78,10 @@ nnoremap <leader>tn :tabn<CR>
 noremap <leader>tp :tabp<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>wq :wq<CR>
+nnoremap <leader>qa :qall<CR>
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nmap <silent> <leader>/ :nohlsearch<CR>
@@ -90,4 +96,11 @@ nmap <silent> <leader>k <C-w>k
 " ===============
 autocmd VimEnter * NERDTree          
 autocmd VimEnter * wincmd p          "Put the cursor at the edit window
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType c set omnifunc=ccomplete#Complete
 

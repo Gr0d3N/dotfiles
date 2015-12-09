@@ -1,17 +1,17 @@
 "           My vimrc
-"          Mina Habib 
+"          Mina Habib
 "
 "      ++++++++++++++++++++++
 "      + Twitter: NullGuru@ +
 "      + Github : NullGuru@ +
 "      ++++++++++++++++++++++
+ 
+ 
 
-
-
-" ======================= 
-" My plugins using Vundle 
 " =======================
-set nocompatible 
+" My plugins using Vundle
+" =======================
+set nocompatible
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -24,10 +24,10 @@ Plugin 'mattn/emmet-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-scripts/AutoComplPop'
+Plugin 'Shougo/neocomplcache.vim'
 Plugin 'ervandew/supertab'
 call vundle#end()
-
+ 
 
 " ================
 " General Settings
@@ -52,9 +52,11 @@ set cpoptions+=$
 set virtualedit=all
 syntax enable
 colorscheme solarized
-filetype off 
+filetype off
 filetype plugin indent on
-
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+ 
 
 " =======
 " My LETs
@@ -65,7 +67,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:surround_45 = "<% \r %>"
 let g:surround_61 = "<%= \r %>"
-
+let g:neocomplcache_enable_at_startup = 1
 
 " ==========
 " My Mappins
@@ -89,19 +91,16 @@ nmap <silent> <leader>h <C-w>h
 nmap <silent> <leader>l <C-w>l
 nmap <silent> <leader>j <C-w>j
 nmap <silent> <leader>k <C-w>k
-
+ 
 
 " ===============
 " My Autocommands
 " ===============
-autocmd VimEnter * NERDTree          
+autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p          "Put the cursor at the edit window
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType c set omnifunc=ccomplete#Complete
-
+autocmd FileType python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags

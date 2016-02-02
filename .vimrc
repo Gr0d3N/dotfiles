@@ -21,7 +21,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mattn/emmet-vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'Shougo/neocomplcache.vim'
@@ -95,8 +95,8 @@ nmap <silent> <leader>l <C-w>l
 nmap <silent> <leader>j <C-w>j
 nmap <silent> <leader>k <C-w>k
 nmap <silent> <leader>p :CtrlP<CR>
+nmap <silent> <leader>pb :CtrlPBuffer<CR>
  
-
 " ===============
 " My Autocommands
 " ===============

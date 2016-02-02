@@ -56,6 +56,7 @@ filetype off
 filetype plugin indent on
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+set laststatus=2      "airline laststatus begin when no split
  
 
 " =======
@@ -100,8 +101,8 @@ nmap <silent> <leader>pb :CtrlPBuffer<CR>
 " ===============
 " My Autocommands
 " ===============
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p          "Put the cursor at the edit window
+"autocmd VimEnter * NERDTree          "Temporary removing NERDTree at startup
+"autocmd VimEnter * wincmd p          "Put the cursor at the edit window
 autocmd FileType python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags

@@ -26,6 +26,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
 call vundle#end()
  
 
@@ -57,6 +58,9 @@ filetype plugin indent on
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set laststatus=2      "airline laststatus begin when no split
+set statusline+=%#warningmsg#                  "for syntastic
+set statusline+=%{SyntasticStatuslineFlag()}   "for syntastic 
+set statusline+=%*                             "for syntastic 
  
 
 " =======
@@ -69,6 +73,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:surround_45 = "<% \r %>"
 let g:surround_61 = "<%= \r %>"
 let g:neocomplcache_enable_at_startup = 1
+let g:syntastic_always_populate_loc_list = 1    "for syntastic 
+let g:syntastic_auto_loc_list = 1               "for syntastic 
+let g:syntastic_check_on_open = 1               "for syntastic 
+let g:syntastic_check_on_wq = 0                 "for syntastic 
 
 " ==========
 " My Mappins
@@ -97,6 +105,7 @@ nmap <silent> <leader>j <C-w>j
 nmap <silent> <leader>k <C-w>k
 nmap <silent> <leader>p :CtrlP<CR>
 nmap <silent> <leader>pb :CtrlPBuffer<CR>
+nmap <silent> <leader>ggt :GitGutterToggle<CR>
  
 " ===============
 " My Autocommands

@@ -113,6 +113,7 @@ nmap <silent> <leader>ggt :GitGutterToggle<CR>
 "autocmd VimEnter * NERDTree          "Temporary removing NERDTree at startup
 "autocmd VimEnter * wincmd p          "Put the cursor at the edit window
 autocmd FileType python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType java setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS

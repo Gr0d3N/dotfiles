@@ -98,6 +98,8 @@ nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nmap <silent> <leader>sn :set nu<CR>
 nmap <silent> <leader>snn :set nonu<CR>
+nmap <silent> <leader>sp :set paste<CR>
+nmap <silent> <leader>snp :set nopaste<CR>
 nmap <silent> <leader>/ :nohlsearch<CR>
 nmap <silent> <leader>h <C-w>h
 nmap <silent> <leader>l <C-w>l

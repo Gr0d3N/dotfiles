@@ -77,6 +77,7 @@ let g:syntastic_always_populate_loc_list = 1    "for syntastic
 let g:syntastic_auto_loc_list = 1               "for syntastic 
 let g:syntastic_check_on_open = 1               "for syntastic 
 let g:syntastic_check_on_wq = 0                 "for syntastic 
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['java', 'python', 'ruby'],'passive_filetypes': [''] } "syntastic start in passive mode with exceptions
 
 " ==========
 " My Mappins

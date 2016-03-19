@@ -7,6 +7,7 @@ alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
 alias dotfiles="cd ~/dotfiles/"
+alias cl="clear"
 
 # Colorful mac terminal 
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "

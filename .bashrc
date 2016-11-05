@@ -1,5 +1,8 @@
 # .bashrc
 
+# Important for pyenv to work
+eval "$(pyenv init -)"
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
   . /etc/bashrc

@@ -92,6 +92,9 @@ alias dotfiles="cd ~/dotfiles/"
 alias cl="clear" 
 alias mdo="cd ~/python/mdo/ && python MDO.py"
 
+# Important for pyenv to work
+eval "$(pyenv init -)"
+
 # Vi mode
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode

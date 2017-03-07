@@ -91,6 +91,7 @@ alias ..5="cd ../../../../.."
 alias dotfiles="cd ~/dotfiles/"
 alias cl="clear" 
 alias mdo="cd ~/python/mdo/ && python MDO.py"
+alias notes="cd ~/notes/"
 
 # Important for pyenv to work
 eval "$(pyenv init -)"

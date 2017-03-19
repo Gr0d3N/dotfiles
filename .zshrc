@@ -91,7 +91,13 @@ alias ..5="cd ../../../../.."
 alias dotfiles="cd ~/dotfiles/"
 alias cl="clear" 
 alias mdo="cd ~/python/mdo/ && python MDO.py"
-alias notes="cd ~/notes/"
+# git alias
+alias gs="git status "
+alias ga="git add "
+alias gb="git branch "
+alias gc="git commit "
+alias gd="git diff "
+alias gch="git checkout "
 
 # Important for pyenv to work
 eval "$(pyenv init -)"

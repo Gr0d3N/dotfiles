@@ -1,10 +1,11 @@
-# want vi to be the default editor for readline                      
-set editing-mode vi                                            
+# want vi to be the default editor for readline 
+set editing-mode vi
+set -o vi
 
-# vi settings                                         
+# vi settings                                    
 $if mode=vi                
     # normal mode                           
-    #set keymap vi-command                                 
+    #set keymap vi-command         
     #"gg": beginning-of-history
     #"G": end-of-history
     # insert mode             

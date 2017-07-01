@@ -18,7 +18,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-rails'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mattn/emmet-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -27,6 +26,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
  
 

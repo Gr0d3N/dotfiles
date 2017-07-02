@@ -96,7 +96,9 @@ alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
 alias dotfiles="cd ~/dotfiles/"
 alias cl="clear"
-alias mdo="cd ~/python/mdo/ && python MDO.py"
+alias mdo="cd ~/Packages/MDO/ && python MDO.py"
+alias dotfiles="cd ~/Packages/dotfiles/"
+
 # git alias
 alias gs="git status "
 alias ga="git add "

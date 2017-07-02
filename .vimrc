@@ -61,6 +61,7 @@ set laststatus=2      "airline laststatus begin when no split
 set statusline+=%#warningmsg#                  "for syntastic
 set statusline+=%{SyntasticStatuslineFlag()}   "for syntastic 
 set statusline+=%*                             "for syntastic 
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h12 "setting default font for MacVim
  
 
 " =======

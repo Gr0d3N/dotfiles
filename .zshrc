@@ -59,6 +59,10 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+# Anaconda path
+PATH=$PATH:$HOME/anaconda/bin
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"

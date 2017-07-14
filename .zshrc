@@ -62,6 +62,9 @@ export PATH="/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/
 
 # Anaconda path
 PATH=$PATH:$HOME/anaconda/bin
+# Brazil and SDETools path
+export BRAZIL_CLI_BIN=/apollo/env/SDETools/bin
+export PATH=$BRAZIL_CLI_BIN:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

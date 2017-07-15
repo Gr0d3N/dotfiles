@@ -107,6 +107,7 @@ alias dotfiles="cd ~/dotfiles/"
 alias cl="clear"
 alias mdo="cd ~/Packages/MDO/ && python MDO.py"
 alias dotfiles="cd ~/Packages/dotfiles/"
+alias queries="cd ~/Packages/Sccp_queries/src/Sccp_queries/"
 
 # git alias
 alias gs="git status "

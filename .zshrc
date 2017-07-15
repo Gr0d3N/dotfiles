@@ -65,6 +65,8 @@ PATH=$PATH:$HOME/anaconda/bin
 # Brazil and SDETools path
 export BRAZIL_CLI_BIN=/apollo/env/SDETools/bin
 export PATH=$BRAZIL_CLI_BIN:$PATH
+# Path for code reviews
+export PATH="$PATH":~/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

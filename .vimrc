@@ -62,6 +62,7 @@ set statusline+=%#warningmsg#                  "for syntastic
 set statusline+=%{SyntasticStatuslineFlag()}   "for syntastic 
 set statusline+=%*                             "for syntastic 
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h12 "setting default font for MacVim
+set clipboard=unnamed "to enable copying and pasting between vim and other applications
  
 
 " =======

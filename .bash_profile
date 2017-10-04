@@ -19,3 +19,6 @@ alias ls='ls -GFh'
 
 # added by Anaconda3 4.4.0 installer
 export PATH="/Users/minahabi/anaconda/bin:$PATH"
+
+# added by Anaconda3 4.4.0 installer
+export PATH="/Users/minahabi/anaconda/bin:$PATH"

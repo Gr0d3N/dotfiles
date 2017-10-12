@@ -107,6 +107,11 @@ alias cl="clear"
 alias mdo="cd ~/Packages/Python/MDO/ && python MDO.py"
 alias dotfiles="cd ~/Packages/Others/dotfiles/"
 alias queries="cd ~/Packages/SQL/Sccp_queries/src/Sccp_queries/"
+alias mount_pdrive="mount_smbfs //minahabi@ant.amazon.com/home/sea/005/minahabi ~/pdrive"
+alias mount_cpdrive="mount_smbfs //minahabi@ant/dept/CapacityPlanning/ ~/cpdrive"
+alias pdrive="cd ~/pdrive"
+alias cpdrive="cd ~/cpdive"
+alias trash="rmtrash"
 
 # git alias
 alias gs="git status "

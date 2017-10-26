@@ -112,6 +112,7 @@ alias mount_cpdrive="mount_smbfs //minahabi@ant/dept/CapacityPlanning/ ~/cpdrive
 alias pdrive="cd ~/pdrive"
 alias cpdrive="cd ~/cpdive"
 alias trash="rmtrash"
+alias notes="cd ~/Notes/"
 
 # git alias
 alias gs="git status "

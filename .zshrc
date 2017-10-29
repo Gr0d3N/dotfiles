@@ -110,7 +110,7 @@ alias queries="cd ~/Packages/SQL/Sccp_queries/src/Sccp_queries/"
 alias mount_pdrive="mount_smbfs //minahabi@ant.amazon.com/home/sea/005/minahabi ~/pdrive"
 alias mount_cpdrive="mount_smbfs //minahabi@ant/dept/CapacityPlanning/ ~/cpdrive"
 alias pdrive="cd ~/pdrive"
-alias cpdrive="cd ~/cpdive"
+alias cpdrive="cd ~/cpdrive"
 alias trash="rmtrash"
 alias notes="cd ~/Notes/"
 

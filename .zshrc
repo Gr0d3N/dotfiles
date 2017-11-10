@@ -113,6 +113,7 @@ alias pdrive="cd ~/pdrive"
 alias cpdrive="cd ~/cpdrive"
 alias trash="rmtrash"
 alias notes="cd ~/Notes/"
+alias network_capacity_summary="cd ~/Packages/Python/network_capacity_summary/src/Network_capacity_summary/"
 
 # git alias
 alias gs="git status "

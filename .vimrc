@@ -92,7 +92,7 @@ nnoremap <leader>tn :tabn<CR>
 noremap <leader>tp :tabp<CR>
 nnoremap <leader>bn :bn<CR>
 nnoremap <leader>bp :bp<CR>
-nnoremap <leader>bd :bd<CR>
+nnoremap <leader>bd :b#<bar>:bd#<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>wq :wq<CR>

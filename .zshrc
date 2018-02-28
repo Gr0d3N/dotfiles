@@ -114,7 +114,7 @@ alias cpdrive="cd ~/cpdrive"
 alias trash="rmtrash"
 alias notes="cd ~/Notes/"
 alias network_capacity_summary="cd ~/Packages/Python/network_capacity_summary/src/Network_capacity_summary/"
-alias brs="cd ~/Packages/Ruby/brs/src/BRSWebsite/"
+alias brs="cd ~/Packages/Ruby/brs/src/BRSWebsite/rails-root/"
 
 # git alias
 alias gs="git status "

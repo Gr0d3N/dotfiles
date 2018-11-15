@@ -35,8 +35,8 @@ call vundle#end()
 " ================
 set number
 set background=dark
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set showcmd
 set hidden
@@ -120,6 +120,7 @@ nmap <silent> <leader>ggt :GitGutterToggle<CR>
 autocmd FileType python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType java setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType sql setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS

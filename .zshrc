@@ -124,6 +124,13 @@ alias gc="git commit "
 alias gd="git diff "
 alias gch="git checkout "
 
+# brazil alias
+alias bb="brazil-build"
+alias bre="brazil-runtime-exec"
+
 # Vi mode
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

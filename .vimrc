@@ -25,8 +25,10 @@ Plugin 'mattn/emmet-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neocomplete.vim'
 Plugin 'ervandew/supertab'
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
 call vundle#end()
  
 
@@ -80,6 +82,7 @@ let g:syntastic_auto_loc_list = 1               "for syntastic
 let g:syntastic_check_on_open = 1               "for syntastic 
 let g:syntastic_check_on_wq = 0                 "for syntastic 
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['java', 'python', 'ruby'],'passive_filetypes': [''] } "syntastic start in passive mode with exceptions
+:let g:notes_directories = ['~/Dropbox/Notes']
 
 " ==========
 " My Mappins

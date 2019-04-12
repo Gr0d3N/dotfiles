@@ -128,9 +128,27 @@ alias gch="git checkout "
 alias bb="brazil-build"
 alias bre="brazil-runtime-exec"
 
+# alias for jq for Jupyter notebooks git
+alias nbstrip_jq="jq --indent 1 \
+    '(.cells[] | select(has(\"outputs\")) | .outputs) = []  \
+    | (.cells[] | select(has(\"execution_count\")) | .execution_count) = null  \
+    | .metadata = {\"language_info\": {\"name\": \"python\", \"pygments_lexer\": \"ipython3\"}} \
+    | .cells[].metadata = {} \
+    '"
+
+# function for false-positives and diff-divergences for jupyter notebooks git 
+function nbstrip_all_cwd {
+    for nbfile in *.ipynb; do
+        echo "$( nbstrip_jq $nbfile )" > $nbfile
+    done
+    unset nbfile
+}           
+
 # Vi mode
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+export PATH=$HOME/.toolbox/bin:$PATH  

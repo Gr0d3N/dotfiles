@@ -1,18 +1,23 @@
 [user]
-	email = minahabi@amazon.com
-	name = Mina Habib
-[color]
-	ui = auto
+    email = minahabi@amazon.com
+    name = Mina Habib
 [core]
-	pager = less -FMRiX
-	autocrlf = input
-	excludesfile = /Users/minahabi/.gitignore
-	editor = code --wait
+    editor = vim
+    pager = less -FMRiX
+    excludesfile = /Users/minahabi/.config/git/excludes
+    attributesfile = ~/.gitattributes_global
+[color]
+    ui = auto
 [push]
-	default = simple
+    default = simple
 [alias]
-	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%C    reset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-[amazon]
-	append-cr-url = true
-	pull-request-by-default = true
+    dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+[filter "nbstrip_full"]
+    clean = "jq --indent 1 \
+            '(.cells[] | select(has(\"outputs\")) | .outputs) = []  \
+            | (.cells[] | select(has(\"execution_count\")) | .execution_count) = null  \
+            | .metadata = {\"language_info\": {\"name\": \"python\", \"pygments_lexer\": \"ipython3\"}} \
+            | .cells[].metadata = {} \
+            '"
+    smudge = cat
+    required = true

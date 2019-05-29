@@ -115,6 +115,8 @@ alias trash="rmtrash"
 alias notes="cd ~/Notes/"
 alias network_capacity_summary="cd ~/Packages/Python/network_capacity_summary/src/Network_capacity_summary/"
 alias brs="cd ~/Packages/Ruby/brs/src/BRSWebsite/rails-root/"
+alias analysis="cd /Users/minahabi/Packages/Python/SccpAnalysis/src/SccpAnalysis"
+alias relo="cd /Users/minahabi/Packages/Python/ReloForecast/src/ReloForecast"
 
 # git alias
 alias gs="git status "

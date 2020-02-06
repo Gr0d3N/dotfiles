@@ -60,6 +60,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
+# Odin Retrieval Script path
+export PATH=$PATH:$HOME/workplace/.odin-tools/env/OdinRetrievalScript-1.0/runtime/bin
 # Anaconda path
 PATH=$PATH:$HOME/anaconda/bin
 # Brazil and SDETools path
@@ -106,17 +108,16 @@ alias ..5="cd ../../../../.."
 alias cl="clear"
 alias mdo="cd ~/Packages/Python/MDO/ && python MDO.py"
 alias dotfiles="cd ~/Packages/Others/dotfiles/"
-alias queries="cd ~/Packages/SQL/Sccp_queries/src/Sccp_queries/"
+alias queries="cd ~/workplace/AGLNetworkPlanningQueries/src/AGLNetworkPlanningQueries/"
 alias mount_pdrive="mount_smbfs //minahabi@ant.amazon.com/home/sea/005/minahabi ~/pdrive"
 alias mount_cpdrive="mount_smbfs //minahabi@ant/dept/CapacityPlanning/ ~/cpdrive"
+alias mount_agldrive="mount_smbfs //minahabi@ant/dept/Amazon-Gloval-Logistics/ ~/agldrive"
 alias pdrive="cd ~/pdrive"
 alias cpdrive="cd ~/cpdrive"
+alias agldrive="cd ~/agldrive"
 alias trash="rmtrash"
 alias notes="cd ~/Notes/"
-alias network_capacity_summary="cd ~/Packages/Python/network_capacity_summary/src/Network_capacity_summary/"
-alias brs="cd ~/Packages/Ruby/brs/src/BRSWebsite/rails-root/"
-alias analysis="cd /Users/minahabi/Packages/Python/SccpAnalysis/src/SccpAnalysis"
-alias relo="cd /Users/minahabi/Packages/Python/ReloForecast/src/ReloForecast"
+alias analysis="cd /Users/minahabi/workplace/AGLNetworkPlanningAnalysis/src/AGLNetworkPlanningAnalysis"
 
 # git alias
 alias gs="git status "
@@ -129,6 +130,9 @@ alias gch="git checkout "
 # brazil alias
 alias bb="brazil-build"
 alias bre="brazil-runtime-exec"
+
+# odin alias
+alias odin="ssh -f -N -L 2009:localhost:2009 minahabi.aka.amazon.com"
 
 # alias for jq for Jupyter notebooks git
 alias nbstrip_jq="jq --indent 1 \

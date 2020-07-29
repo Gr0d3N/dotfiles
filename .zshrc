@@ -134,6 +134,9 @@ alias bre="brazil-runtime-exec"
 # odin alias
 alias odin="ssh -f -N -L 2009:localhost:2009 minahabi.aka.amazon.com"
 
+# aws ec2 ssh alias
+alias ec2_jupyter="ssh -i development_ec2_instance.pem -L 8000:localhost:8888 ubuntu@ec2-54-245-103-38.us-west-2.compute.amazonaws.com"
+
 # alias for jq for Jupyter notebooks git
 alias nbstrip_jq="jq --indent 1 \
     '(.cells[] | select(has(\"outputs\")) | .outputs) = []  \

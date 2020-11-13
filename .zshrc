@@ -132,7 +132,7 @@ alias bb="brazil-build"
 alias bre="brazil-runtime-exec"
 
 # odin alias
-alias odin="ssh -f -N -L 2009:localhost:2009 minahabi.aka.amazon.com"
+alias odin="ssh -f -N -L 2009:localhost:2009 minahabi.aka.corp.amazon.com"
 
 # aws ec2 ssh alias
 alias ec2_jupyter="ssh -i development_ec2_instance.pem -L 8000:localhost:8888 ubuntu@ec2-54-245-103-38.us-west-2.compute.amazonaws.com"
@@ -164,14 +164,14 @@ export PATH=$HOME/.toolbox/bin:$PATH
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/minahabi/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/minahabi/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/minahabi/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/Users/minahabi/anaconda/etc/profile.d/conda.sh"
+    if [ -f "/Users/minahabi/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/minahabi/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/minahabi/anaconda/bin:$PATH"
+        export PATH="/Users/minahabi/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup

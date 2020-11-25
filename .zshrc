@@ -136,7 +136,7 @@ alias bre="brazil-runtime-exec"
 alias odin="ssh -f -N -L 2009:localhost:2009 minahabi.aka.corp.amazon.com"
 
 # aws ec2 ssh alias
-alias ec2_jupyter="ssh -i development_ec2_instance.pem -L 8000:localhost:8888 ubuntu@ec2-54-245-103-38.us-west-2.compute.amazonaws.com"
+alias ec2_jupyter="cd ~/.ssh && ssh -i development_ec2_instance.pem -L 8000:localhost:8888 ubuntu@ec2-54-245-103-38.us-west-2.compute.amazonaws.com"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -156,3 +156,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# For Amazon toolbox
+export PATH=$HOME/.toolbox/bin:$PATH
+
+# For Odin
+export PATH=$PATH:$HOME/.odin-tools/env/OdinRetrievalScript-1.0/runtime/bin

@@ -132,6 +132,9 @@ alias gch="git checkout "
 alias bb="brazil-build"
 alias bre="brazil-runtime-exec"
 
+# dev-dsk alias
+alias ssh_dev="ssh dev-dsk-minahabi-2c-4f9b099e.us-west-2.amazon.com"
+
 # odin alias
 alias odin="ssh -f -N -L 2009:localhost:2009 minahabi.aka.corp.amazon.com"
 

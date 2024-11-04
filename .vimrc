@@ -19,14 +19,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'ervandew/supertab'
-Plugin 'xolox/vim-notes'
-Plugin 'xolox/vim-misc'
 call vundle#end()
  
 

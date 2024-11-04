@@ -135,11 +135,20 @@ alias bre="brazil-runtime-exec"
 # dev-dsk alias
 alias ssh_dev="ssh dev-dsk-minahabi-2c-4f9b099e.us-west-2.amazon.com"
 
+# nice dcv alias
+alias dcv="killall -9 dcvviewer; python ~/dcv/dcv-cdd.py connect --wssh minahabi-clouddesk.aka.corp.amazon.com"
+
 # odin alias
 alias odin="ssh -f -N -L 2009:localhost:2009 minahabi.aka.corp.amazon.com"
 
-# aws ec2 ssh alias
+# AWS
 alias ec2_jupyter="cd ~/.ssh && ssh -i development_ec2_instance.pem -L 8000:localhost:8888 ubuntu@ec2-54-245-103-38.us-west-2.compute.amazonaws.com"
+alias sagemaker_jupyter="aws \
+    --profile Admin --region us-east-1 \
+    sagemaker \
+    create-presigned-domain-url \
+    --domain-id d-tpzyqa8d6bx4 \
+    --user-profile-name default-20231005t095456"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -165,3 +174,13 @@ export PATH=$HOME/.toolbox/bin:$PATH
 
 # For Odin
 export PATH=$PATH:$HOME/.odin-tools/env/OdinRetrievalScript-1.0/runtime/bin
+
+# For NVM
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+source /Users/minahabi/.brazil_completion/zsh_completion
+
+# For RDE
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
